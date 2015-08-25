@@ -12,7 +12,6 @@ coffee-script
  ```
 
 ### Edit
- * one
- * two
-  > 1. npm install
-
+ - one
+ - two
+  * three
