@@ -1,12 +1,12 @@
 # Description
 
 A test repository.
+```
+coffee-script
+```
 
 ## Usage
 
- '''
- $ npm install
- '''
  ```
  $ npm install -g
  ```
@@ -14,5 +14,5 @@ A test repository.
 ### Edit
  * one
  * two
- > 1.npm install
+  > 1. npm install
 
