@@ -15,10 +15,15 @@ getTopic = ->
 
     $ '.summary .title a'
     .each (idx, element) ->
+      content = element.children[0].data
       aLink = element.attribs.href
       href = url.resolve _tarUrl, aLink
 
       # console.log element.children[0].data
       # console.log href
       # console.log ''
-      console.log idx
+      printText content
+      printText href
+
+printText = (text) ->
+  console.log text
