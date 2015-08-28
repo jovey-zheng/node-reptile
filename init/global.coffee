@@ -1,4 +1,5 @@
 path = require 'path'
+moment = require 'moment'
 
 global.__basename = path.normalize __dirname + '/..'
 
@@ -9,3 +10,6 @@ global.kill = (msg) ->
 
 global.print = (msg) ->
   console.log msg
+
+global.log = (msg)->
+  console.log "#{moment().format('YYYY-MM-DD HH:mm:ss')} - #{message}"
