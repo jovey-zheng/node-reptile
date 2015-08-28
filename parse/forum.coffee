@@ -52,9 +52,10 @@ getTopic = (_tarUrl) ->
   .then superagent.get(_tarUrl).end (err, res) ->
       if err then console.error err
       $ = cheerio.load res.text
-
+      i = 0
       $ '.summary .title a'
       .each (idx, element) ->
+        i++
         content = element.children[0].data
         aLink = element.attribs.href
         href = url.resolve _tarUrl, aLink
@@ -63,6 +64,7 @@ getTopic = (_tarUrl) ->
         .then parseTopic
         # .then (result) ->
         #   print result
+
 
 
 parseTopic = (options) ->
