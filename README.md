@@ -1,17 +1,10 @@
 # Description
 
 NodeJs爬虫.
-```
-coffee-script
-```
 
 ## Usage
 
  ```
  $ npm install -g
+ $ node app
  ```
-
-### Edit
- - one
- - two
-  * three
