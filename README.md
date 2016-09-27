@@ -5,6 +5,6 @@ NodeJs爬虫.
 ## Usage
 
  ```
- $ npm install -g
+ $ npm install
  $ node app
  ```
